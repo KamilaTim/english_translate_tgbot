@@ -37,7 +37,6 @@ def case_of_error(error_code):
 
 def get_traslate(text, lang):
     request = requests.post(URL, data={'key': KEY, 'text': text, 'lang': lang})
-    #print request.status_code
     if request.status_code == 200:
         return request.json()
     else:
