@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<form method="get">
+
+            <label>
+                <span>Введите текст:</span><br>
+                <textarea cols="40" rows="10" name="inputtext"></textarea>
+            </label><br>
+
+
+            <label>
+                <span>Перевод текста</span><br>
+                <textarea cols="40" rows="10" readonly>{{ translated_text }}</textarea>
+            </label><br>
+
+
+            <input type="submit" value="Перевод">
+        </form>
+{% endblock %}
